@@ -5,9 +5,29 @@
     <title>Xin chào</title>
   </head>
   <body>
-    <h1>Chào các cậu, tớ tên Định</h1>
-    <p>Tớ đang chán, cứu :((</p>
-    <img src="https://i.imgflip.com/17un04.jpg" alt="chan">
-    <p><strong><i>Vẫn chán</i></strong></p>
+    <form action=" " method="get">
+      <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        Họ và tên: <br>
+        <input type="text" id="name1" name="name">
+        <label for="name1"></label> <br>
+        Lớp: <br>
+        <input type="text" id="grade1"name="grade">
+        <label for="grade1"></label> <br>
+        Giới tính <br>
+        <label><input type="radio" name="gender" value="male" checked>Nam</label>
+        <label><input type="radio" name="gender" value="female">Nữ</label> <br>
+        Bạn sống ở: <br>
+        <select name="city">
+          <option value="HN">Hà Nội</option>
+          <option value="HP">Hải Phòng</option>
+          <option value="ĐN">Đắk Nông</option>
+        </select> <br>
+        Nhập bài văn tại đây: <br>
+        <textarea name="vantho" rows="8" cols="50"></textarea> <br>
+        <input type="submit" name="submit" value="Hoàn tất">
+        <input type="reset" name="reset" value="Nhập lại">
+      </fieldset>
+    </form>
   </body>
 </html>

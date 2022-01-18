@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hi</title>
+  </head>
+  <body>
+    <div id="div1">
+      <p id="p1">Có ma ở đằng sau kìa</p>
+      <label><button onclick="hmmm()" id="b1";">Hmmm</button> </label>
+      <label><button onclick="hmmm2()" id="b2";">Hello</button></label>
+      </div>
+      <script type="text/javascript">
+        const p2 = document.createElement("p");
+        const p1 = document.getElementById("p1");
+        p2.innerHTML = "Đùa tí làm gì căng :))";
+        const div = document.getElementById('div1');
+        function hmmm() {
+          div.insertBefore(p2,p1);
+          p2.style.color = "red";
+          p1.remove();
+          const hmm1 = document.getElementById('b1');
+          const hmm2 = document.getElementById('b2');
+          b1.remove();
+          b2.remove();
+
+        }
+        function hmmm2() {
+          const p3 = document.createElement("p");
+          p3.innerHTML = "hmmm";
+          div.insertBefore(p3, p1);
+          const hmm1 = document.getElementById('b1');
+          const hmm2 = document.getElementById('b2');
+          b1.remove();
+          b2.remove();
+          p1.remove();
+          p3.style.color = 'green';
+        }
+      </script>
+  </body>
+</html>
